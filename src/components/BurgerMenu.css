@@ -1,0 +1,95 @@
+/* Burger container */
+.burger-container {
+    height: 100%;
+    width: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    cursor: pointer;
+    margin-left: auto;
+    padding-right: 1rem;
+}
+
+/* Burger button */
+.burger {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: transparent;
+    z-index: 1000;
+    border: none;
+    padding: 10px;
+}
+
+.burger span {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  border-radius:0.5em;
+  transition: all 0.5s ease;
+}
+
+.burger.open{
+    background-color: transparent;
+}
+/* Animation for open state */
+.burger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(0.65em, 0.40em);
+    transition: ease-out 0.5s;
+}
+
+.burger.open span:nth-child(2) {
+    transform: scale(0.1);
+    transition: ease-out 0.5s;
+}
+
+.burger.open span:nth-child(3) {
+    transform: rotate(135deg) translate(-0.65em, 0.55em);
+    transition: ease-out 0.5s;
+}
+
+/* Navigation links */
+   .nav-links {
+  margin-top: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9); /* dark semi-transparent background */
+  padding: 20px;
+  border-radius: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  z-index: 9999; /* very high */
+}
+
+.nav-links.visible {
+    display: flex !important;
+}
+
+.nav-links li {
+    margin: 10px 0;
+    color:white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+.nav-links > a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: #9c9797;
+}
+

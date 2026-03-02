@@ -1,0 +1,637 @@
+.about-hero{
+  background-image: url('/images/about us hero.webp');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+#about-hero-txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  max-width: 800px;
+}
+
+#about-hero-txt h1 {
+  font-size: 2.5rem; 
+  font-weight: 700;
+  line-height: 1.3;
+  word-break: break-word;
+  text-align: center;
+}
+
+/*Our Story Section*/
+.our-story-section {
+  padding: 40px 20px;
+  background-color: #f8f8f8;
+}
+
+.story-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.story-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+#story-header {
+  font-size: 2.5rem;
+  color: #1e1e1e;
+  margin-bottom: 20px;
+}
+
+#story-paragraph {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+  max-width: 600px;
+}
+
+#story-img {
+  flex: 1;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  min-width: 300px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .story-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .story-text, #story-img {
+    width: 100%;
+  }
+
+  #story-header {
+    font-size: 2rem;
+  }
+
+  #story-paragraph {
+    font-size: 1rem;
+  }
+}
+
+
+/*Our Advantage*/
+.our-advantage {
+  padding: 60px 20px;
+  background-color: #f9fbfc;
+  text-align: center;
+}
+
+.advantage-header h2 {
+  font-size: 2.4rem;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.advantage-header p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #444;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.advantage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+.advantage-card {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.advantage-card:hover {
+  transform: translateY(-5px);
+}
+
+.advantage-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .advantage-img {
+    height: 120px;
+  }
+}
+
+
+/* Placeholder visuals (you can later replace these with real images) */
+.tech {
+  background-color: #d6ecfa;
+  background-image: url('/images/tech-tools.png'); /* Replace with real image */
+}
+
+.eco {
+  background-color: #c9f2dd;
+  background-image: url('/images/eco-friendly.png');
+}
+
+.trained {
+  background-color: #e4e7fb;
+  background-image: url('/images/training.png');
+}
+
+.flexible {
+  background-color: #ffeccb;
+  background-image: url('/images/flexible-service.png');
+}
+
+.customer {
+  background-color: #fdd5e5;
+  background-image: url('/images/customer-focus.png');
+}
+
+.advantage-card h3 {
+  font-size: 1.2rem;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.advantage-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .advantage-card {
+    padding: 20px 15px;
+  }
+  .advantage-img {
+    height: 140px;
+  }
+}
+
+
+/*Mavericks Section*/
+.mavericks {
+  background-color: #0A1012;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#mavericks-header {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.mavericks-subtext {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  color: white;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.maverick-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.maverick-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px 20px;
+  max-width: 320px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 500px;
+}
+
+.maverick-img {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+  border-radius: 100%;
+  background-color: #cbd5e0; /* Light gray placeholder */
+}
+
+.maverick-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #003366;
+  margin: 10px 0 5px;
+}
+
+.maverick-title {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.maverick-desc {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+
+
+#values-header{
+  padding: 50px;
+  padding-left: 50px;
+  text-align: center;
+}
+
+.core-values{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.values{
+    align-items: center;
+    text-align: center;
+    padding-right:15px ;
+}
+/* Our Team Section*/
+.our-team{
+  padding: 50px 20px 60px;
+}
+
+.our-team-header{
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 2rem;
+}
+
+.our-team-imgs{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.team-img{
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .maverick-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .our-team-imgs{
+    grid-template-columns: 1fr;
+  }
+
+  .team-img{
+    height: 220px;
+  }
+}
+
+/* Regulatory Compliance & Certifications */
+/* ─────────────────────────────────────────────────
+   COMPLIANCE SECTION  –  Pachama-inspired carousel
+   Replace / merge with your existing About.css
+───────────────────────────────────────────────── */
+
+/* ── Section wrapper ── */
+.compliance-section {
+  background: #f5f2ec;          /* warm off-white like Pachama */
+  padding: 72px 48px;
+}
+
+.compliance-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ── Header row ── */
+.compliance-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+}
+
+.compliance-header h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 8px;
+  max-width: 480px;
+  line-height: 1.2;
+}
+
+.compliance-header p {
+  font-size: 0.95rem;
+  color: #555;
+  max-width: 480px;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* "SEE ALL CERTIFICATIONS" pill button */
+.compliance-see-all {
+  flex-shrink: 0;
+  align-self: flex-start;
+  margin-top: 6px;
+  padding: 8px 18px;
+  border: 1.5px solid #1a1a1a;
+  border-radius: 999px;
+  background: transparent;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+
+.compliance-see-all:hover {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+/* ── Carousel wrapper (positions arrows outside) ── */
+.compliance-carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* ── Scrollable track ── */
+.compliance-carousel {
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding-bottom: 8px;
+  flex: 1;
+}
+
+.compliance-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* ── Arrow buttons ── */
+.compliance-arrow {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1.5px solid #ccc;
+  background: #fff;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #1a1a1a;
+  transition: border-color 0.2s, background 0.2s, color 0.2s;
+  line-height: 1;
+}
+
+.compliance-arrow:hover {
+  background: #1a1a1a;
+  border-color: #1a1a1a;
+  color: #fff;
+}
+
+/* ── Individual card ── */
+.compliance-card {
+  width: 200px;
+  height: 350px;
+  scroll-snap-align: start;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.compliance-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.13);
+}
+
+/* ── Image area ── */
+.compliance-card-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+  background: #e8e4dc;
+}
+
+.compliance-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.compliance-card:hover .compliance-card-image {
+  transform: scale(1.05);
+}
+
+/* dark gradient overlay for badge legibility */
+.compliance-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.35) 0%,
+    rgba(0,0,0,0) 50%
+  );
+  pointer-events: none;
+}
+
+/* category badge on image (top-left) */
+.compliance-card-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+}
+
+/* ── Text body ── */
+.compliance-card-body {
+  padding: 16px 18px 18px;
+}
+
+.compliance-authority {
+  font-size: 0.72rem;
+  color: #888;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0 0 6px;
+}
+
+.compliance-card-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 12px;
+  line-height: 1.35;
+}
+
+/* status pill */
+.compliance-status-badge {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.badge--active {
+  background: #d4edda;
+  color: #1a6933;
+}
+
+.badge--valid {
+  background: #fff3cd;
+  color: #7a5c00;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .compliance-section {
+    padding: 48px 20px;
+  }
+
+  .compliance-header {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .compliance-card {
+    flex: 0 0 220px;
+  }
+
+  .compliance-arrow {
+    width: 34px;
+    height: 34px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .compliance-card {
+    flex: 0 0 80vw;
+  }
+}
+
+
+/*Cta section*/
+.cta-section {
+  background-color: white; /* Navy Blue */
+  padding: 60px 20px;
+  text-align: center;
+  color: black;
+}
+
+.cta-content h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.4;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cta-primary {
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.cta-primary {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.cta-primary:hover {
+  background-color: #2b2b2b;
+
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .cta-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    width: 100%;
+    max-width: 300px;
+  }
+}
