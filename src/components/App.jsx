@@ -30,7 +30,6 @@ export default function App() {
         <nav>
           <Navbar/>
         </nav>
-        <AnimateOnView>
         <div id="hero-txt">
           <h1 >
           Driven By a passion for structure and service, we operate with precision and care-ensuring clean, safe and functional spaces.
@@ -44,7 +43,6 @@ export default function App() {
           </Link>
         </button>
         </div>
-        </AnimateOnView>
       </div>
  
   <section className="about-preview-section">

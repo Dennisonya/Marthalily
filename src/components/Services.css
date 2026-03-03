@@ -6,33 +6,87 @@ body{
     font-style: normal;
 }
 
+.navbar1{
+  display: flex;
+  justify-content:space-between; 
+  align-items: center;
+  position: sticky;
+  margin-top: 0;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 10000;
+  background-color: #0A1012;
+}
+
+#logo-img{
+  width:135px;
+  height: 135px;
+}
+
+
+.links{
+  color: white;
+  list-style: none;
+  display: flex;
+  font-weight: 700;
+  font-size: large;
+  gap: 35px;
+  align-items: center;
+}
+
+#contact-us-btn{
+  padding: 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight:800;
+  border-radius: 20px;
+  background-color: white;
+  color: #000;
+  border: none;
+}
+
+.burger-wrapper1 {
+  display: none;
+}
+
 .service-hero{
     background-image: url('/images/serviceshero2.webp');
-  
     background-position:center;
     background-size: cover;
     position: relative;
-    min-height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
 }
 
+.service-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* Adjust darkness here */
+  z-index: 1;
+}
 
 #service-hero-txt{
    position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
   max-width: 800px;
+  z-index: 2;
 }
+
 .services-section{
     padding: 35px;
 }
 
 .services-section,h1{
     font-size: 2rem;
+    padding: 20px;
+    text-align: center;
 }
 
 .service-list {
@@ -88,7 +142,7 @@ body{
 
 /* Learn More button */
 .learn-more-btn {
-  margin-top: auto;
+  margin-top: 15px;
   padding: 10px 20px;
   background-color: #0A1012;
   color: white;
@@ -181,6 +235,7 @@ body{
     justify-content: center;
 }
 .contact-us-btn{
+    margin-top: 20px;
     padding: 15px;
     background-color: #0A1012;
     color: white;
@@ -234,6 +289,16 @@ body{
 .service-detail-page{
   background-color: #f9fafb;
   min-height: 100vh;
+}
+
+.service-detail-page .navbar{
+  background: rgba(10, 16, 18, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.service-detail-page .navbar .links a{
+  color: #ffffff;
 }
 
 .service-detail-main{

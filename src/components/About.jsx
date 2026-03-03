@@ -4,7 +4,8 @@ import "./About.css";
 import Navbar from "./Navbar.jsx";
 import Footer from "./Footer.jsx";
 import FadeInWhenVisible from "./FadeInWhenVisible.jsx";
-
+import BurgerMenu from "./BurgerMenu.jsx";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   const navigate = useNavigate();
@@ -78,17 +79,25 @@ const AboutUs = () => {
 
   return (
     <div className="about-page">
-      {/* Hero Section */}
-      <section className="about-hero">
-        <nav>
-            <Navbar/>
-        </nav>
-        <div id="about-hero-txt">
-          <FadeInWhenVisible delay={0.3}>
-          <h1>About Us</h1>
-          </FadeInWhenVisible>
+      <div className="navbar1">
+            <div className="logo">
+                <Link to="/">
+                <img src="/images/MARTHALLY_LogoWhite.webp" alt="" id="logo-img" />
+                </Link>
+            </div>
+
+            <ul className="links">
+                <li><Link to ="/">Home</Link></li>
+                <li><Link to="/services">Services</Link></li>
+                <li><Link to="/about">About Us</Link></li>
+                <li id="contact-us-btn"><Link to="/contact">Contact Us</Link></li>
+            </ul>
+
+            <div className="burger-wrapper1">
+                 <BurgerMenu/>
+            </div>
+           
         </div>
-      </section>
 
 <section className="our-story-section">
   <div className="story-content">
@@ -106,7 +115,7 @@ const AboutUs = () => {
       </FadeInWhenVisible>
     
     </div>
-    <img src="/images/Our-story.webp" alt="Our Story" id="story-img" />
+    <img src="/images/homehero.webp" alt="Our Story" id="story-img" />
   </div>
 </section>
 
@@ -257,7 +266,7 @@ const AboutUs = () => {
           <img src="/images/Security2.jpeg" alt="Security personnel team" className="team-img" />
           <img src="/images/Cleaners.jpeg" alt="Cleaning crew" className="team-img" />
           <img src="/images/Security.jpeg" alt="Security staff" className="team-img" />
-          <img src="/images/about us hero.webp" alt="Team at work" className="team-img" />
+          <img src="/images/contact-us-hero.png" alt="Team at work" className="team-img" />
         </div>
       </section>
 
@@ -271,13 +280,6 @@ const AboutUs = () => {
           maintaining up‑to‑date certifications that reflect our commitment to professionalism
           and accountability.
         </p>
-        <button
-          type="button"
-          className="compliance-see-all"
-          onClick={() => navigate("/certifications")} // or remove if no page
-        >
-          SEE ALL CERTIFICATIONS
-        </button>
       </div>
     </FadeInWhenVisible>
 

@@ -55,7 +55,8 @@ body, html {
 }
 
 /***Home Hero Section***/
-.home-hero{
+.home-hero {
+  position: relative;  /* IMPORTANT */
   background-image: url('/images/homehero.webp');
   background-position: center;
   background-size: cover;
@@ -65,7 +66,13 @@ body, html {
   flex-direction: column;
 }
 
-
+.home-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* Adjust darkness here */
+  z-index: 1;
+}
 
 .service-hero {
   position: relative;
@@ -80,6 +87,7 @@ body, html {
   text-align: center;
   color: white;
   max-width: 800px;
+  z-index: 2; 
 }
 
 #hero-txt h1 {
@@ -101,6 +109,7 @@ body, html {
 }
 
 #services-btn{
+    margin-top: 25px;
     padding: 15px;
     border-radius: 20px;
     font-size: 15px;
