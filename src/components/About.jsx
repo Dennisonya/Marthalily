@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./About.css";
 import Navbar from "./Navbar.jsx";
@@ -6,60 +6,68 @@ import Footer from "./Footer.jsx";
 import FadeInWhenVisible from "./FadeInWhenVisible.jsx";
 import BurgerMenu from "./BurgerMenu.jsx";
 import { Link } from "react-router-dom";
+import { image } from "framer-motion/client";
 
 const AboutUs = () => {
   const navigate = useNavigate();
   const complianceCarouselRef = useRef(null);
+  const [activeCertificate, setActiveCertificate] = useState(null);
 
   const certifications = [
     {
       name: "CAC Certificate of Incorporation",
       authority: "Corporate Affairs Commission",
       status: "Active",
-      image: "/images/CAC CERTIFICATE.png",
+      image: "/images/CAC.jpg",
     },
     {
       name: "Tax Clearance Certificate",
       authority: "Federal Inland Revenue Service (FIRS)",
       status: "Valid until 2025",
-      image: "/images/FIRS .png",
+      image: "/images/FIRS.jpg",
     },
     {
       name: "IFMA Certificate of Membership",
       authority: "International Facility Management Association (IFMA)",
       status: "Active",
-      image: "/images/IFMA 2.png",
+      image: "/images/IFMA.jpg",
     },
     {
       name: "ISO 45001:2018",
       authority: "International Organization for Standardization",
       status: "Active",
-      image: "/images/ISO 2018.png",
+      image: "/images/ISO 45001 2018.jpg",
     },
     {
       name: "ISO 14001:2015",
       authority: "International Organization for Standardization",
       status: "Active",
-      image: "/images/ISO 2015.png",
+      image: "/images/ISO 2015.jpg",
     },
     {
       name: "ISO 9001:2015 - Quality Management System",
       authority: "International Organization for Standardization",
       status: "Active",
-      image: "/images/ISO 9001 2015.png",
+      image: "/images/ISO 90012015.jpg",
     },
     {
       name: "BPP Certificate",
       authority: "Bureau Of Public Procurement",
       status: "Active",
-      image: "/images/BPP.png",
+      image: "/images/BPP.jpg",
     },
     {
       name: "ITF Certificate",
       authority: "Industrial Training Fund",
       status: "Active",
-      image: "/images/ITF.png",
+      image: "/images/ITF.jpg",
     },
+    {
+      name: "Health, Safety & Environment (HSE) Policy",
+      authority: "Health, Safety & Environment",
+      status: "Active",
+      image: "/images/HSE.jpg"
+    }
   ];
 
   const handleContactClick = () => {
@@ -75,6 +83,14 @@ const AboutUs = () => {
       left: direction === "left" ? -scrollAmount : scrollAmount,
       behavior: "smooth",
     });
+  };
+
+  const openCertificate = (cert) => {
+    setActiveCertificate(cert);
+  };
+
+  const closeCertificate = () => {
+    setActiveCertificate(null);
   };
 
   return (
@@ -199,6 +215,16 @@ const AboutUs = () => {
       </p>
     </div>
     </FadeInWhenVisible>
+    {/* Card 4 */}
+    <FadeInWhenVisible delay={0.3}>
+    <div className="maverick-card">
+      <img src="/images/MD_BENSON.png" className="maverick-img placeholder-img" />
+      <h3 className="maverick-name">Oluwasegun Benson</h3>
+      <p className="maverick-title">Managing Director</p>
+      <p className="maverick-desc">
+      With a strong background in Total Facility Management and a proven track record in delivering high-quality, integrated solutions across various sectors,. His hands-on leadership and strategic vision have positioned Marthalily as a trusted name in the industry, known for operational excellence, client satisfaction, and a commitment to best practices in service delivery.      </p>
+    </div>
+    </FadeInWhenVisible>
   
     {/* Card 2 */}
     <FadeInWhenVisible delay={0.5}> 
@@ -223,16 +249,7 @@ const AboutUs = () => {
       </p>
     </div>
     </FadeInWhenVisible>
-    {/* Card 4 */}
-    <FadeInWhenVisible delay={0.3}>
-    <div className="maverick-card">
-      <img src="/images/MD_BENSON.png" className="maverick-img placeholder-img" />
-      <h3 className="maverick-name">Oluwasegun Benson</h3>
-      <p className="maverick-title">Managing Director</p>
-      <p className="maverick-desc">
-      With a strong background in Total Facility Management and a proven track record in delivering high-quality, integrated solutions across various sectors,. His hands-on leadership and strategic vision have positioned Marthalily as a trusted name in the industry, known for operational excellence, client satisfaction, and a commitment to best practices in service delivery.      </p>
-    </div>
-    </FadeInWhenVisible>
+    
   </div>
 </section>
 
@@ -271,68 +288,103 @@ const AboutUs = () => {
       </section>
 
       <section className="compliance-section">
-  <div className="compliance-container">
-    <FadeInWhenVisible delay={0.2}>
-      <div className="compliance-header">
-        <h2>Regulatory Compliance &amp; Certifications</h2>
-        <p>
-          We operate in line with Nigerian regulatory requirements and industry best practices,
-          maintaining up‑to‑date certifications that reflect our commitment to professionalism
-          and accountability.
-        </p>
-      </div>
-    </FadeInWhenVisible>
-
-    <div className="compliance-carousel-wrapper">
-      <button
-        type="button"
-        className="compliance-arrow compliance-arrow--left"
-        aria-label="Scroll certifications left"
-        onClick={() => scrollComplianceCarousel("left")}
-      >
-        &#8592;
-      </button>
-
-      <div className="compliance-carousel" ref={complianceCarouselRef}>
-        {certifications.map((cert, index) => (
-          <FadeInWhenVisible key={cert.name} delay={0.2 + index * 0.08}>
-            <article className="compliance-card">
-              <div className="compliance-card-img-wrap">
-                <img
-                  src={cert.image}
-                  alt={`${cert.name} issued by ${cert.authority}`}
-                  className="compliance-card-image"
-                />
-                <div className="compliance-card-overlay" />
-                <span className="compliance-card-badge">CERTIFICATE</span>
-              </div>
-              <div className="compliance-card-body">
-                <p className="compliance-authority">{cert.authority}</p>
-                <h3 className="compliance-card-title">{cert.name}</h3>
-                <span
-                  className={`compliance-status-badge ${
-                    cert.status === "Active" ? "badge--active" : "badge--valid"
-                  }`}
-                >
-                  {cert.status}
-                </span>
-              </div>
-            </article>
+        <div className="compliance-container">
+          <FadeInWhenVisible delay={0.2}>
+            <div className="compliance-header">
+              <h2>Regulatory Compliance &amp; Certifications</h2>
+              <p>
+                We operate in line with Nigerian regulatory requirements and industry best practices,
+                maintaining up‑to‑date certifications that reflect our commitment to professionalism
+                and accountability.
+              </p>
+            </div>
           </FadeInWhenVisible>
-        ))}
-      </div>
 
-      <button
-        type="button"
-        className="compliance-arrow compliance-arrow--right"
-        aria-label="Scroll certifications right"
-        onClick={() => scrollComplianceCarousel("right")}
-      >
-        &#8594;
-      </button>
-    </div>
-  </div>
-</section>
+          <div className="compliance-carousel-wrapper">
+            <button
+              type="button"
+              className="compliance-arrow compliance-arrow--left"
+              aria-label="Scroll certifications left"
+              onClick={() => scrollComplianceCarousel("left")}
+            >
+              &#8592;
+            </button>
+
+            <div className="compliance-carousel" ref={complianceCarouselRef}>
+              {certifications.map((cert, index) => (
+                <FadeInWhenVisible key={cert.name} delay={0.2 + index * 0.08}>
+                  <article
+                    className="compliance-card"
+                    role="button"
+                    tabIndex={0}
+                    onClick={() => openCertificate(cert)}
+                  >
+                    <div className="compliance-card-img-wrap">
+                      <img
+                        src={cert.image}
+                        alt={`${cert.name} issued by ${cert.authority}`}
+                        className="compliance-card-image"
+                      />
+                      <div className="compliance-card-overlay" />
+                      <span className="compliance-card-badge">CERTIFICATE</span>
+                    </div>
+                    <div className="compliance-card-body">
+                      <p className="compliance-authority">{cert.authority}</p>
+                      <h3 className="compliance-card-title">{cert.name}</h3>
+                      <span
+                        className={`compliance-status-badge ${
+                          cert.status === "Active" ? "badge--active" : "badge--valid"
+                        }`}
+                      >
+                        {cert.status}
+                      </span>
+                    </div>
+                  </article>
+                </FadeInWhenVisible>
+              ))}
+            </div>
+
+            <button
+              type="button"
+              className="compliance-arrow compliance-arrow--right"
+              aria-label="Scroll certifications right"
+              onClick={() => scrollComplianceCarousel("right")}
+            >
+              &#8594;
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {activeCertificate && (
+        <div
+          className="cert-modal-backdrop"
+          onClick={closeCertificate}
+          aria-modal="true"
+          role="dialog"
+        >
+          <div
+            className="cert-modal"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              type="button"
+              className="cert-modal-close"
+              onClick={closeCertificate}
+              aria-label="Close certificate preview"
+            >
+              ×
+            </button>
+            <img
+              src={activeCertificate.image}
+              alt={`${activeCertificate.name} issued by ${activeCertificate.authority}`}
+              className="cert-modal-image"
+            />
+            <h3 className="cert-modal-title">{activeCertificate.name}</h3>
+            <p className="cert-modal-authority">{activeCertificate.authority}</p>
+          </div>
+        </div>
+      )}
 
 <section className="cta-section">
   <div className="cta-content">

@@ -185,10 +185,7 @@ export default function App() {
       </section>
 
       <section className='certifications'>
-        <img src="/images/QLTY_MGT.png" alt="" id='certification'/>
-        <img src="/images/OCCUPATIONAL_HLTH.png" alt="" id='certification'/>
-        <img src="/images/ENVRNTAL_SYS.png" alt="" id='certification'/>
-        <img src="/images/IFMA.png" alt="" id='certification' />
+        <img src="public/images/MARTHALILY_Certi_Logos.png" alt="" className='certi-images' />
       </section>
 
     <Footer/>
