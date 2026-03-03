@@ -3,6 +3,10 @@ import { useParams, useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import "./Services.css";
+import { div } from "framer-motion/client";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const SERVICE_DETAILS = {
   "janitorial-cleaning": {
@@ -114,7 +118,8 @@ const SERVICE_DETAILS = {
       "Attractive, well‑presented outdoor spaces that enhance visitor experience.",
       "Reduced slip, trip, and visibility hazards.",
       "A cohesive external environment that supports your brand image."
-    ]
+    ], 
+    images: ["/images/cleaning service.jpeg","/images/cleaning service2.jpeg"]
   },
   "waste-management": {
     title: "Waste Management",
@@ -196,8 +201,21 @@ export default function ServiceDetails() {
       <nav>
         <Navbar />
       </nav>
-
-      <main className="service-detail-main">
+      {service.images.length !== 0 ?
+      <section className="service-detail-images">
+      <Slider dots={true} infinite={true} speed={500} slidesToShow={1} slidesToScroll={1}>
+        {service.images.map((img, index) => (
+          <div key={index}>
+            <img
+              src={img}
+              alt={`${service.title} ${index + 1}`}
+              className="service-detail-image"
+            />
+          </div>
+        ))}
+      </Slider>
+    </section> : <></>}      
+    <main className="service-detail-main">
         <header className="service-detail-hero">
           <span className="service-detail-label">SERVICE DETAIL</span>
           <h1>{service.title}</h1>
