@@ -185,8 +185,8 @@ export default function App() {
       </section>
 
       <section className='certifications'>
-        <img src="public/images/MARTHALILY_Certi_Logos.png" alt="" className='certi-images' />
-        
+        <img src="/images/MARTHALILY_Certi_Logos.png" alt="" className='certi-images' />
+
       </section>
     <Footer/>
           </>
