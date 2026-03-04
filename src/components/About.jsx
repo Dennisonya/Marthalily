@@ -218,7 +218,7 @@ const AboutUs = () => {
     {/* Card 4 */}
     <FadeInWhenVisible delay={0.3}>
     <div className="maverick-card">
-      <img src="/images/MD_BENSON.png" className="maverick-img placeholder-img" />
+      <img src="/images/MARTHALILY_Benson.png" className="maverick-img placeholder-img" />
       <h3 className="maverick-name">Oluwasegun Benson</h3>
       <p className="maverick-title">Managing Director</p>
       <p className="maverick-desc">
