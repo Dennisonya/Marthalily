@@ -30,7 +30,8 @@ const SERVICE_DETAILS = {
       "A consistently clean, pleasant environment for staff and visitors.",
       "Lower health and safety risks linked to poor hygiene.",
       "A professional first impression that reflects your brand."
-    ]
+    ],
+    images: ["/images/industrial cleaning.webp"]
   },
   "security-services": {
     title: "Security Services",
@@ -52,7 +53,8 @@ const SERVICE_DETAILS = {
       "Improved control of who enters and exits your facilities.",
       "Deterrence of theft, vandalism, and unauthorised access.",
       "Greater peace of mind for management, staff, and residents."
-    ]
+    ],
+    images: []
   },
   "pest-management": {
     title: "Integrated Pest Management System (IPMS)",
@@ -74,7 +76,8 @@ const SERVICE_DETAILS = {
       "Noticeable reduction in pest activity and complaints.",
       "Improved compliance with health, safety, and audit requirements.",
       "Protection of your brand image and customer experience."
-    ]
+    ],
+    images: []
   },
   "streetlight-infrastructure": {
     title: "Streetlight & Infrastructure Maintenance",
@@ -96,7 +99,8 @@ const SERVICE_DETAILS = {
       "Safer, better‑lit environments for road users and pedestrians.",
       "Lower downtime and maintenance emergencies.",
       "Extended asset life and better visibility of infrastructure condition."
-    ]
+    ], 
+    images: ["/images/Streelight maintenance.webp","/images/cleaning service.jpeg","/images/cleaning service2.jpeg"]
   },
   "landscaping-groundskeeping": {
     title: "Landscaping & Groundskeeping",
@@ -118,8 +122,8 @@ const SERVICE_DETAILS = {
       "Attractive, well‑presented outdoor spaces that enhance visitor experience.",
       "Reduced slip, trip, and visibility hazards.",
       "A cohesive external environment that supports your brand image."
-    ], 
-    images: ["/images/cleaning service.jpeg","/images/cleaning service2.jpeg"]
+    ],
+    images: ["/images/lawn care.webp"]
   },
   "waste-management": {
     title: "Waste Management",
@@ -141,7 +145,8 @@ const SERVICE_DETAILS = {
       "Cleaner, more organised back‑of‑house and external areas.",
       "Better tracking of waste volumes and associated costs.",
       "Improved compliance with environmental regulations."
-    ]
+    ],
+    images: []
   },
   "building-maintenance": {
     title: "Building, Elevators & Generator Maintenance",
@@ -163,7 +168,8 @@ const SERVICE_DETAILS = {
       "Greater uptime for lifts, power, and essential services.",
       "Lower risk of major failures through early detection.",
       "A more predictable maintenance budget over time."
-    ]
+    ],
+    images:["/images/building maintenance.webp"]
   }
 };
 
