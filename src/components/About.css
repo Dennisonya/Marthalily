@@ -259,6 +259,10 @@
   color: white;
   font-size: 1.1rem;
   line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .maverick-cards {
@@ -279,15 +283,15 @@
   flex-direction: column;
   justify-content: space-between;
   height:620px;
+  padding: 20px;
 }
 
 .maverick-img {
-  width: 270px;
+  width: 100%;
   height: 250px;
   object-fit: cover;
-  margin: 0 auto 20px;
   border-radius: 10px;
-  background-color: #cbd5e0; /* Light gray placeholder */
+  margin-bottom: 20px;
 }
 
 .maverick-name {
@@ -308,9 +312,27 @@
   line-height: 1.5;
   color: #444;
   text-align: left;
+  flex-grow: 1;
 }
 
+.maverick-read-more{
+  margin-top: 10px;
+  align-self: flex-start;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #111827;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
 
+.maverick-read-more:hover{
+  background-color: #eef2ff;
+  border-color: #c7d2fe;
+}
 
 #values-header{
   padding: 50px;

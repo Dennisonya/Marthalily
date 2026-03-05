@@ -12,6 +12,7 @@ const AboutUs = () => {
   const navigate = useNavigate();
   const complianceCarouselRef = useRef(null);
   const [activeCertificate, setActiveCertificate] = useState(null);
+  const [expandedMaverick, setExpandedMaverick] = useState(null);
 
   const certifications = [
     {
@@ -91,6 +92,10 @@ const AboutUs = () => {
 
   const closeCertificate = () => {
     setActiveCertificate(null);
+  };
+
+  const toggleMaverick = (id) => {
+    setExpandedMaverick((prev) => (prev === id ? null : id));
   };
 
   return (
@@ -211,8 +216,17 @@ const AboutUs = () => {
       <h3 className="maverick-name">Lateef Gbajabiamila</h3>
       <p className="maverick-title">Chief Executive Officer</p>
       <p className="maverick-desc">
-        Results-driven Executive with a diverse background in business development, media, and spirits distribution, leveraging strategic insight, operational excellence, and a passion for structure to lead multicultural teams and deliver innovative, client-focused solutions in the facility management industry.
+        {expandedMaverick === "lateef"
+          ? "Results-driven Executive with a diverse background in business development, media, and spirits distribution, leveraging strategic insight, operational excellence, and a passion for structure to lead multicultural teams and deliver innovative, client-focused solutions in the facility management industry."
+          : "Results-driven Executive with a diverse background in business development, media, and spirits distribution, leveraging strategic insight and operational excellence to lead multicultural teams."}
       </p>
+      <button
+        type="button"
+        className="maverick-read-more"
+        onClick={() => toggleMaverick("lateef")}
+      >
+        {expandedMaverick === "lateef" ? "Read less" : "Read more"}
+      </button>
     </div>
     </FadeInWhenVisible>
     {/* Card 4 */}
@@ -222,7 +236,17 @@ const AboutUs = () => {
       <h3 className="maverick-name">Oluwasegun Benson</h3>
       <p className="maverick-title">Managing Director</p>
       <p className="maverick-desc">
-      With a strong background in Total Facility Management and a proven track record in delivering high-quality, integrated solutions across various sectors,. His hands-on leadership and strategic vision have positioned Marthalily as a trusted name in the industry, known for operational excellence, client satisfaction, and a commitment to best practices in service delivery.      </p>
+        {expandedMaverick === "benson"
+          ? "With a strong background in Total Facility Management and a proven track record in delivering high-quality, integrated solutions across various sectors, his hands-on leadership and strategic vision have positioned Marthalily as a trusted name in the industry, known for operational excellence, client satisfaction, and a commitment to best practices in service delivery."
+          : "With a strong background in Total Facility Management and a proven track record delivering integrated solutions across sectors, his hands-on leadership and strategic vision position Marthalily as a trusted industry name."}
+      </p>
+      <button
+        type="button"
+        className="maverick-read-more"
+        onClick={() => toggleMaverick("benson")}
+      >
+        {expandedMaverick === "benson" ? "Read less" : "Read more"}
+      </button>
     </div>
     </FadeInWhenVisible>
   
@@ -233,8 +257,17 @@ const AboutUs = () => {
       <h3 className="maverick-name">Toluwalase Durosinmi-Etti</h3>
       <p className="maverick-title">Chief Operating Officer</p>
       <p className="maverick-desc">
-        A dynamic operations leader with over six years of cross-industry experience in the UK and Nigeria. Drives process efficiency, team performance and client satisfaction through strategic, data-driven decision-making.
+        {expandedMaverick === "tolulope"
+          ? "A dynamic operations leader with over six years of cross-industry experience in the UK and Nigeria. Drives process efficiency, team performance, and client satisfaction through strategic, data-driven decision-making."
+          : "A dynamic operations leader with over six years of cross-industry experience in the UK and Nigeria, driving process efficiency, team performance, and client satisfaction."}
       </p>
+      <button
+        type="button"
+        className="maverick-read-more"
+        onClick={() => toggleMaverick("tolulope")}
+      >
+        {expandedMaverick === "tolulope" ? "Read less" : "Read more"}
+      </button>
     </div>
     </FadeInWhenVisible>
 
@@ -245,8 +278,17 @@ const AboutUs = () => {
       <h3 className="maverick-name">Kikelomo Tito</h3>
       <p className="maverick-title">Head of HR/Projects</p>
       <p className="maverick-desc">
-        HR professional with expertise in strategic planning, talent acquisition, and organizational development. Known for driving compliance, performance, and employee engagement through a consultative, results-oriented approach.
+        {expandedMaverick === "kikelomo"
+          ? "HR professional with expertise in strategic planning, talent acquisition, and organizational development. Known for driving compliance, performance, and employee engagement through a consultative, results-oriented approach."
+          : "HR professional with expertise in strategic planning, talent acquisition, and organizational development, known for driving compliance, performance, and employee engagement."}
       </p>
+      <button
+        type="button"
+        className="maverick-read-more"
+        onClick={() => toggleMaverick("kikelomo")}
+      >
+        {expandedMaverick === "kikelomo" ? "Read less" : "Read more"}
+      </button>
     </div>
     </FadeInWhenVisible>
     
