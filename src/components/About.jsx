@@ -325,7 +325,7 @@ const AboutUs = () => {
           <img src="/images/Security2.jpeg" alt="Security personnel team" className="team-img" />
           <img src="/images/Cleaners.jpeg" alt="Cleaning crew" className="team-img" />
           <img src="/images/Security.jpeg" alt="Security staff" className="team-img" />
-          <img src="/images/contact-us-hero.png" alt="Team at work" className="team-img" />
+          <img src="/images/Contact-us.webp" alt="Team at work" className="team-img" />
         </div>
       </section>
 
