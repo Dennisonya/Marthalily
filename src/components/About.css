@@ -315,8 +315,7 @@ body{
   font-size: 0.95rem;
   line-height: 1.5;
   color: #444;
-  text-align: center;
-  justify-content: center;
+  text-align: left;
   flex-grow: 1;
 }
 
