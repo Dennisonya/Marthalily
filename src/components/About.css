@@ -1,3 +1,7 @@
+body{
+  overflow-x: hidden;
+}
+
 /*Navbar section*/
 .navbar1{
   display: flex;
@@ -311,7 +315,8 @@
   font-size: 0.95rem;
   line-height: 1.5;
   color: #444;
-  text-align: left;
+  text-align: center;
+  justify-content: center;
   flex-grow: 1;
 }
 
@@ -767,5 +772,21 @@
   .cta-secondary {
     width: 100%;
     max-width: 300px;
+  }
+}
+
+@media  screen and (min-width:300px) and (max-width:430px){
+  .links, .navbar1 ul {
+    display: none; /* hide desktop links */
+  }
+  .burger-container {
+    margin-left: 0; /* reset margin */
+    padding: 0 0.5rem;
+  }
+  .navbar1 {
+    justify-content: space-between;
+  }
+  .burger-wrapper1{
+    display: block;
   }
 }

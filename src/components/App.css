@@ -595,6 +595,9 @@ body, html {
     align-items: center;
     gap: 10px;
   }
+  .certi-images{
+    width: 400px;
+  }
 }
 
 /* Tablet responsiveness */
@@ -656,7 +659,7 @@ body, html {
 
 
   #hero-txt{
-    max-width: 350px;
+    max-width: 380px;
   }
  #hero-txt h1 {
   font-size: 1.4rem;
@@ -692,6 +695,10 @@ body, html {
   .brief p {
     font-size: 0.9rem;
   }
+  .certi-images{
+    width: 400px;
+    object-fit: contain;
+  }
 }
 
 
@@ -722,7 +729,7 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    text-align: center;
+    
      bottom: 2rem;
      min-width: 400px;
      max-height: 300px;
@@ -759,7 +766,7 @@ body, html {
     
     text-align: center;
      bottom: 2rem;
-     min-width: 200px;
+     min-width: 300px;
      max-height: 300px;
   }
   #hero-txt h1{

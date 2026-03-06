@@ -156,7 +156,7 @@ const AboutUs = () => {
   <div className="advantage-grid">
     <FadeInWhenVisible delay={0.3}>
     <div className="advantage-card">
-      <img src="/images/ANALYST_1.webp" className="advantage-img tech" />
+      <img src="/images/lawn care.webp" className="advantage-img tech" />
       <h3>Tech-Driven Services</h3>
       <p>We use smart tools and automation to enhance efficiency and service quality.</p>
     </div>
