@@ -163,7 +163,7 @@ export default function App() {
           </div>
           <div className='clientele-item'>
             <img src="/images/FAAN_Logo.jpg" alt="FAAN logo" className='clientele-img'/>
-            <h2></h2>
+            <h2>Federal Airports Authority Of Nigeria</h2>
           </div>    
           <div className='clientele-item'>
             <img src="/images/CBN.png" alt="CBN logo" className='clientele-img'/>
