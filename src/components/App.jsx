@@ -179,6 +179,7 @@ export default function App() {
           </div>
           <div className='clientele-item'>
             <img src="/images/NEPZA.jpeg" alt="NEPZA logo" className='clientele-img'/>
+            <h2>Nigeria Export Processing Zones Authority</h2>
             <h2></h2>
           </div>
         </div>
