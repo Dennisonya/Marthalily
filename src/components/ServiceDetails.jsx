@@ -77,7 +77,7 @@ const SERVICE_DETAILS = {
       "Improved compliance with health, safety, and audit requirements.",
       "Protection of your brand image and customer experience."
     ],
-    images: []
+    images: ["/images/pest control image.webp"]
   },
   "streetlight-infrastructure": {
     title: "Streetlight & Infrastructure Maintenance",

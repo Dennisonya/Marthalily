@@ -173,7 +173,7 @@ const AboutUs = () => {
 
     <FadeInWhenVisible delay={0.7}>
     <div className="advantage-card">
-      <img src="/images/Pro Team.webp" className="advantage-img trained" />
+      <img src="/images/Cleaners.jpeg" className="advantage-img trained" />
       <h3>Trained Professionals</h3>
       <p>Our team members are highly trained to deliver consistent, expert-level care.</p>
     </div>

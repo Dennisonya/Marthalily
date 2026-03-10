@@ -2,12 +2,12 @@ export const reasons = [
   {
     title: "Tech-Driven Solutions",
     text: "Smart sensors, scheduling apps, digital dashboards for efficiency and transparency.",
-    img: "/images/ANALYST_1.webp",
+    img: "/images/building maintenance.webp",
   },
   {
     title: "Expert Team",
     text: "Highly trained, skilled, and professional technicians and staff.",
-    img: "/images/cleaning team.webp",
+    img: "/images/Cleaners.jpeg",
   },
   {
     title: "Cutting-Edge Equipment",
