@@ -170,11 +170,11 @@ export default function App() {
             <h2>CBN, AKURE</h2>
           </div>
           <div className='clientele-item'>
-            <img src="/images/CBN.png" alt="CBN logo" className='clientele-img'/>
+            <img src="/images/CBN.png" alt="CBN logo" className='clientele-img' />
             <h2>CBN, MINNA</h2>
           </div>
           <div className='clientele-item'>
-            <img src="/images/BOI-logo.png.webp" alt="BOI logo" className='clientele-img'/>
+            <img src="/images/BOI-logo.png.webp" alt="BOI logo" className='clientele-img' id="BOI-img"/>
             <h2>Bank Of Industry</h2>
           </div>
           <div className='clientele-item'>
