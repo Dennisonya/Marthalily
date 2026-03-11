@@ -13,22 +13,10 @@ export default function Services (){
 
     const services = [
         {
-            name: "Janitorial & Cleaning Services",
-            slug: "janitorial-cleaning",
-            text: ["Commercial & residential cleaning","Post contruction cleanup","Deep cleaning & disinfection"],
-            icon: "/images/cleaning-services.png"
-        },
-        {
-            name: "Security Services",
-            slug: "security-services",
-            text: ["Manned gaurding and survaillance","Access control and security systems"],
-            icon: "/images/security.png"   
-        },
-        {
-            name: "Integrated Pest Management System (IPMS)",
-            slug: "pest-management",
-            text: ["Environmentally safe pest system","Routine and emergency pest management"],
-            icon: "/images/pest-control.png"   
+            name: "Building, Elevators & Generator Maintenance",
+            slug: "building-maintenance",
+            text: ["Plumbing, Eletrical, HVAC","General repairs and asset upkeep"],
+            icon: "/images/Elevator & generator maintenance.png"
         },
         {
             name: "Streetlight & Infrastructure Maintenance",
@@ -43,16 +31,28 @@ export default function Services (){
             icon: "/images/landscaping.png" 
         },
         {
+            name: "Integrated Pest Management System (IPMS)",
+            slug: "pest-management",
+            text: ["Environmentally safe pest system","Routine and emergency pest management"],
+            icon: "/images/pest-control.png"   
+        },
+        {
             name: "Waste Management",
             slug: "waste-management",
             text: ["Solid and liquid waste collection","Waste sorting, recycling and disposal"],
             icon: "/images/container.png"
         },
         {
-            name: "Building, Elevators & Generator Maintenance",
-            slug: "building-maintenance",
-            text: ["Plumbing, Eletrical, HVAC","General repairs and asset upkeep"],
-            icon: "/images/Elevator & generator maintenance.png"
+            name: "Security Services",
+            slug: "security-services",
+            text: ["Manned gaurding and survaillance","Access control and security systems"],
+            icon: "/images/security.png"   
+        },
+        {
+            name: "Janitorial & Cleaning Services",
+            slug: "janitorial-cleaning",
+            text: ["Commercial & residential cleaning","Post contruction cleanup","Deep cleaning & disinfection"],
+            icon: "/images/cleaning-services.png"
         }
     ]
 

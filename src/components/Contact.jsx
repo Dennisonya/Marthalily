@@ -77,11 +77,11 @@ export default function Contact() {
 
         <section className="contact-map-section">
           <div className="map-container">
-            <iframe
-              title="Martha Lily Facility Management location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126746.25506107713!2d7.30538765!3d9.076478499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0a5027f5e0d1%3A0x36b9c7a509a68e2!2sAbuja!5e0!3m2!1sen!2sng!4v1700000000000"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
+            <iframe 
+            title="Martha Lily Facility Management Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.145193483402!2d7.510722475077744!3d9.050517891011701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0bc337c6c47d%3A0xbf9be508698d0991!2s17%20Queen%20Elizabeth%20St%2C%20Asokoro%2C%20Abuja%20900231%2C%20Federal%20Capital%20Territory%2C%20Nigeria!5e0!3m2!1sen!2str!4v1773240449702!5m2!1sen!2str"
+            loading="lazy" 
+            policy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </section>
