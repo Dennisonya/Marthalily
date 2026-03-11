@@ -54,7 +54,7 @@ const SERVICE_DETAILS = {
       "Deterrence of theft, vandalism, and unauthorised access.",
       "Greater peace of mind for management, staff, and residents."
     ],
-    images: [""]
+    images: []
   },
   "pest-management": {
     title: "Integrated Pest Management System (IPMS)",

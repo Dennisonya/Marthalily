@@ -212,7 +212,7 @@ const AboutUs = () => {
     {/* Card 1 */}
     <FadeInWhenVisible delay={0.3}>
     <div className="maverick-card">
-      <img src="/images/Lateef Headshot.webp" className="maverick-img placeholder-img" />
+      <img src="/images/MARTHALILY_Latif.png" className="maverick-img placeholder-img" />
       <h3 className="maverick-name">Lateef Gbajabiamila</h3>
       <p className="maverick-title">Chief Executive Officer</p>
       <p className="maverick-desc">
@@ -229,7 +229,7 @@ const AboutUs = () => {
       </button>
     </div>
     </FadeInWhenVisible>
-    {/* Card 4 */}
+    {/* Card 2 */}
     <FadeInWhenVisible delay={0.3}>
     <div className="maverick-card">
       <img src="/images/MARTHALILY_Benson.png" className="maverick-img placeholder-img" />
@@ -250,10 +250,10 @@ const AboutUs = () => {
     </div>
     </FadeInWhenVisible>
   
-    {/* Card 2 */}
+    {/* Card 3*/}
     <FadeInWhenVisible delay={0.5}> 
     <div className="maverick-card">
-      <img src="/images/Tolulope headshot.webp" className="maverick-img placeholder-img" />
+      <img src="/images/MARTHALILY_COO.png" className="maverick-img placeholder-img" />
       <h3 className="maverick-name">Toluwalase Durosinmi-Etti</h3>
       <p className="maverick-title">Chief Operating Officer</p>
       <p className="maverick-desc">
@@ -271,10 +271,10 @@ const AboutUs = () => {
     </div>
     </FadeInWhenVisible>
 
-    {/* Card 3 */}
+    {/* Card 4 */}
     <FadeInWhenVisible delay={0.7}>
     <div className="maverick-card">
-      <img src="/images/Kikelomo Headshot.webp" className="maverick-img placeholder-img" />
+      <img src="/images/MARTHALILY_HR.png" className="maverick-img placeholder-img" />
       <h3 className="maverick-name">Kikelomo Tito</h3>
       <p className="maverick-title">Head of HR/Projects</p>
       <p className="maverick-desc">
