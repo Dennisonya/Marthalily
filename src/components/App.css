@@ -58,7 +58,7 @@ body, html {
 /***Home Hero Section***/
 .home-hero {
   position: relative;  /* IMPORTANT */
-  background-image: url('/images/homehero.webp');
+  background-image: url('/images/Team picture.jpeg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

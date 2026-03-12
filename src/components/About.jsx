@@ -136,7 +136,7 @@ const AboutUs = () => {
       </FadeInWhenVisible>
     
     </div>
-    <img src="/images/homehero.webp" alt="Our Story" id="story-img" />
+    <img src="/images/Team picture.jpeg" alt="Our Story" id="story-img" />
   </div>
 </section>
 
