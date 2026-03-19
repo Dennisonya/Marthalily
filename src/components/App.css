@@ -74,7 +74,7 @@ body, html {
   background: rgba(0, 0, 0, 0.6); /* Adjust darkness here */
   z-index: 1;
 }
-
+2
 .service-hero {
   position: relative;
   height: 100vh; /* fallback to 100vh if needed */

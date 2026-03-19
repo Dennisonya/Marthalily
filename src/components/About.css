@@ -337,6 +337,12 @@ body{
   border-color: #c7d2fe;
 }
 
+@media screen and (min-width: 380px) and  (max-width: 420px){
+  .maverick-cards{
+    padding-left: 30px;
+  }
+}
+
 #values-header{
   padding: 50px;
   padding-left: 50px;

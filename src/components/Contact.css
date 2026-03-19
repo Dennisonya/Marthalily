@@ -11,7 +11,7 @@
 }
 
 .contact-hero {
-  background-image: url('/images/Contact-us-hero.webp'); /* Re-using the hero image */
+  background-image: url('/images/MARTHALLY_HEROES.png'); /* Re-using the hero image */
   background-position: center;
   background-size: cover;
   align-items: center;
@@ -22,7 +22,7 @@
 #contact-hero-txt {
   max-width: 800px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 8rem 1rem;
   text-align: center;
 }
 
@@ -228,5 +228,11 @@
 
   .form-row {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 420px){
+  #contact-hero-txt{
+    padding: 15rem 1rem;
   }
 }

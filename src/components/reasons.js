@@ -2,7 +2,7 @@ export const reasons = [
   {
     title: "Tech-Driven Solutions",
     text: "Smart sensors, scheduling apps, digital dashboards for efficiency and transparency.",
-    img: "/images/building maintenance.webp",
+    img: "/images/MARTHALLY_MACHINE_1.png",
   },
   {
     title: "Expert Team",

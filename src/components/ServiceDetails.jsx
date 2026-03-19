@@ -31,7 +31,7 @@ const SERVICE_DETAILS = {
       "Lower health and safety risks linked to poor hygiene.",
       "A professional first impression that reflects your brand."
     ],
-    images: ["/images/industrial cleaning.webp"]
+    images: ["/images/MARTHALLY_PERSONNEL.png"]
   },
   "security-services": {
     title: "Security Services",
@@ -77,7 +77,7 @@ const SERVICE_DETAILS = {
       "Improved compliance with health, safety, and audit requirements.",
       "Protection of your brand image and customer experience."
     ],
-    images: ["/images/pest control image.webp"]
+    images: ["/images/MARTHALLY_PESTCONTROL.png"]
   },
   "streetlight-infrastructure": {
     title: "Streetlight & Infrastructure Maintenance",
@@ -169,7 +169,7 @@ const SERVICE_DETAILS = {
       "Lower risk of major failures through early detection.",
       "A more predictable maintenance budget over time."
     ],
-    images:["/images/building maintenance.webp"]
+    images:["/images/MARTHALLY_MACHINE_1.png"]
   }
 };
 
